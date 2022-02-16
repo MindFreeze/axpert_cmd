@@ -1,0 +1,8 @@
+{
+    "mqtt_server": "192.168.1.100",
+    "mqtt_user": "mqtt",
+    "mqtt_pass": "mqtt",
+    "mqtt_client_id": "axpert_cmd",
+    "mqtt_response_topic": "power/axpert_res",
+    "mqtt_topic": "power/axpert_cmd"
+}

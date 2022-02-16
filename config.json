@@ -1,0 +1,27 @@
+{
+    "name": "Axpert Command",
+    "version": "0.2.6",
+    "slug": "axpert_cmd",
+    "description": "Control axpert inverter",
+    "arch": ["amd64", "armv7", "i386"],
+    "startup": "application",
+    "boot": "auto",
+    "privileged": ["SYS_RAWIO"],
+    "devices": ["/dev/hidraw0"],
+    "options": {
+        "mqtt_server": "core-mosquitto",
+        "mqtt_user": "mqtt",
+        "mqtt_pass": "mqtt",
+        "mqtt_client_id": "axpert_cmd",
+        "mqtt_topic": "power/axpert_cmd",
+        "mqtt_response_topic": "power/axpert_res"
+    },
+    "schema": {
+        "mqtt_server": "str",
+        "mqtt_user": "str",
+        "mqtt_pass": "str",
+        "mqtt_client_id": "str",
+        "mqtt_response_topic": "str",
+        "mqtt_topic": "str"
+    }
+}
